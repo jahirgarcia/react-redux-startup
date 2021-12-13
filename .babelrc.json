@@ -16,5 +16,19 @@
         "runtime": "automatic"
       }
     ]
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "@app": "./src/app",
+          "@routes": "./src/routes",
+          "@styles": "./src/styles",
+          "@features": "./src/features"
+        }
+      }
+    ]
   ]
 }

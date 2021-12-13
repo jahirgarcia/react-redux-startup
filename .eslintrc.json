@@ -16,10 +16,20 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "prettier"],
+  "plugins": [
+    "react",
+    "prettier",
+    "module-resolver"
+  ],
   "rules": {
     "comma-dangle": ["error", "never"],
     "prettier/prettier": "error",
+    "module-resolver/use-alias": [
+      "error",
+      {
+        "extensions": [".jsx"]
+      }
+    ],
     "react/jsx-filename-extension": [
       1,
       {
@@ -38,5 +48,10 @@
         "devDependencies": ["webpack.*.js"]
       }
     ]
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
   }
 }
