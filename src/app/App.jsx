@@ -1,3 +1,5 @@
+import Counter from '@features/counter/Counter';
+
 export default function App() {
-  return <h1>Let&apos;s Code</h1>;
+  return <Counter />;
 }
